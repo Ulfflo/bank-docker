@@ -12,11 +12,11 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const pool = mysql.createPool({
-  host: "ec2-13-60-64-178.eu-north-1.compute.amazonaws.com",
+  host: "localhost",
   user: "root",
   password: "root",
   database: "bank",
-  port: "3306",
+  port: "3307",
 });
 
 // help function to make code look nicer
